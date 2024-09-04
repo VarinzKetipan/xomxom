@@ -38,12 +38,12 @@ const products = [
 ];
 
 function showProductDetails(productId) {
-  console.log(`Showing details for productId: ${productId}`);
+  console.log(`Show ${productId}`);
 
   const product = products.find((p) => p.id == productId);
 
   if (!product) {
-    console.error(`Product with id ${productId} not found`);
+    console.error(`Product ${productId} not found`);
     return;
   }
 
