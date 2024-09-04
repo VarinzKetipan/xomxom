@@ -92,41 +92,29 @@
 				<div class="col-md-5 col-md-push-2">
 					<div id="product-main-img">
 						<div class="product-preview">
-							<img src="./img/ชาไทย.jpg" alt="">
-						</div>
-
-						<div class="product-preview">
-							<img src="./img/กุหลาบลาเต้.jpg" alt="">
-						</div>
-
-						<div class="product-preview">
-							<img src="./img/โกโก้ลาเต้.jpg" alt="">
-						</div>
-
-						<div class="product-preview">
-							<img src="./img/ชาเขียวมัทฉะชิอาวาเสะ.jpg" alt="">
+							<img id="product-image" src="" alt="">
 						</div>
 					</div>
 				</div>
 				<!-- /Product main img -->
 
 				<!-- Product thumb imgs -->
-				<div class="col-md-2  col-md-pull-5">
+				<div class="col-md-2 col-md-pull-5">
 					<div id="product-imgs">
-						<div class="product-preview">
-							<img src="./img/ชาไทย.jpg" alt="">
+						<div class="product-preview" onclick="showProductDetails(1)">
+							<img src="img/ชาไทย.jpg" alt="ชาไทย">
 						</div>
-
-						<div class="product-preview">
-							<img src="./img/กุหลาบลาเต้.jpg" alt="">
+				
+						<div class="product-preview" onclick="showProductDetails(2)">
+							<img src="img/กุหลาบลาเต้.jpg" alt="กุหลาบลาเต้">
 						</div>
-
-						<div class="product-preview">
-							<img src="./img/โกโก้ลาเต้.jpg" alt="">
+				
+						<div class="product-preview" onclick="showProductDetails(3)">
+							<img src="img/โกโก้ลาเต้.jpg" alt="โกโก้ลาเต้">
 						</div>
-
-						<div class="product-preview">
-							<img src="./img/ชาเขียวมัทฉะชิอาวาเสะ.jpg" alt="">
+				
+						<div class="product-preview" onclick="showProductDetails(4)">
+							<img src="img/ชาเขียวมัทฉะชิอาวาเสะ.jpg" alt="ชาเขียวมัทฉะชิอาวาเสะ">
 						</div>
 					</div>
 				</div>
@@ -135,7 +123,7 @@
 				<!-- Product details -->
 				<div class="col-md-5">
 					<div class="product-details">
-						<h2 class="product-name">ชาไทย</h2>
+						<h2 class="product-name" id="product-name">ชาไทย</h2>
 						<div>
 							<div class="product-rating">
 								<i class="fa fa-star"></i>
@@ -147,14 +135,10 @@
 							<a class="review-link" href="#">10 Review(s) | Add your review</a>
 						</div>
 						<div>
-							<h3 class="product-price">60 บาท <del class="product-old-price">75</del></h3>
+							<h3 class="product-price" id="product-price"> <del class="product-old-price">75</del></h3>
 							<span class="product-available">In Stock</span>
 						</div>
-						<p>ชาไทย เป็นเครื่องดื่มยอดนิยมของคนไทย ทำจากชาดำที่ผ่านการผสมกับเครื่องเทศต่าง ๆ เช่น โป๊ยกั๊ก
-							และอบเชย จากนั้นจะถูกต้มกับน้ำร้อนแล้วกรองกากออก
-							เมื่อน้ำชาพร้อมแล้วก็จะเติมนมข้นหวานและนมข้นจืดเพื่อเพิ่มความหวานและความมัน
-							ก่อนเสิร์ฟมักเติมน้ำแข็งลงในแก้ว และบางครั้งอาจมีการแต่งหน้าด้วยครีมหรือนมเพิ่มเติม
-							ชาไทยมีรสชาติหอมหวาน มัน และเข้มข้น เป็นที่นิยมดื่มในช่วงหน้าร้อนเพื่อความสดชื่น</p>
+						<p id="product-description"></p>
 
 						<div class="product-options">
 							<label>
@@ -224,8 +208,7 @@
 	<script src="js/nouislider.min.js"></script>
 	<script src="js/jquery.zoom.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src=""></script>
-
+	<script src="js/products.js"></script> 
 </body>
 
 </html>
