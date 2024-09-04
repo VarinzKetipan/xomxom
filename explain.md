@@ -1,5 +1,3 @@
-Sure! Here’s how you can format the provided code and comments into a Markdown file:
-
 ````markdown
 # Function Documentation
 
