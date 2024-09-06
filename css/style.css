@@ -405,9 +405,8 @@ textarea.input {
   color: #D10024;
 }
 
-/*=========================================================
-	02 -> HEADER
-===========================================================*/
+/* 02 -> HEADER
+===========================================================*/ */
 
 /*----------------------------*\
 	Top header
@@ -416,7 +415,7 @@ textarea.input {
 #top-header {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #FCEEE0;
+  background-color: #1E1F29;
 }
 
 .header-links li {
@@ -430,7 +429,7 @@ textarea.input {
 }
 
 .header-links li a {
-  color: #000000;
+  color: #FFF;
 }
 
 .header-links li a:hover {
@@ -447,23 +446,23 @@ textarea.input {
 \*----------------------------*/
 
 #header {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #FCEEE0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #a17a5e;
 }
 
 .header-logo {
-  float: right;
+  float: left;
 }
 
 .header-logo .logo img {
   display: block;
-  padding-left: 60%;
+  height: 60px;
 }
 
 /*----------------------------*\
 	Search
-\*----------------------------
+\*----------------------------*/
 
 .header-search {
   padding: 15px 0px;
@@ -495,7 +494,7 @@ textarea.input {
 
 /*----------------------------*\
 	Cart
-\*----------------------------
+\*----------------------------*/
 
 .header-ctn {
   float: right;
@@ -624,10 +623,9 @@ textarea.input {
 ===========================================================*/
 
 #navigation {
-  align-items: center;
   background: #FFF;
   border-bottom: 2px solid #E4E7ED;
-  border-top: 3px solid #FFF;
+  border-top: 3px solid #D10024;
 }
 
 /*----------------------------*\
@@ -666,11 +664,6 @@ textarea.input {
 }
 
 /*----------------------------*\
-	picture
-\*----------------------------*/
-
-
-/*----------------------------*\
 	responsive nav
 \*----------------------------*/
 
@@ -680,10 +673,9 @@ textarea.input {
   }
   #responsive-nav {
     position: fixed;
-    
     left: 0;
     top: 0;
-    background: #15161D;
+    background: #a17a5e;
     height: 100vh;
     max-width: 250px;
     width: 0%;
