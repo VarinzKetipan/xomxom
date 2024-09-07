@@ -104,7 +104,7 @@ const projectSection = document.getElementById("Projects");
 products.forEach((product) => {
   const productHTML = `
     <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-      <a href="#">
+      <a href="detail.html" onclick="saveProductDetails('${product.id}')">
         <img src="${product.image}" alt="${product.name}" class="h-80 w-72 object-cover rounded-t-xl" />
         <div class="px-4 py-3 w-72">
           <span class="text-gray-400 mr-3 uppercase text-xs">${product.category}</span>
@@ -118,3 +118,38 @@ products.forEach((product) => {
   `;
   projectSection.innerHTML += productHTML;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const projectSection = document.getElementById("product");
+  console.log(projectSection); // ตรวจสอบค่า
+  if (projectSection) {
+    products.forEach((product) => {
+      const menutoindex = `
+        <div class="product-img">
+          <img src="${product.image}" alt="">
+        </div>
+        <div class="product-body">
+          <p class="product-category">${product.category}</p>
+          <h3 class="product-name"><a href="product.html">${product.name}</a></h3>
+          <h4 class="product-price">${product.price}</h4>
+          <div class="product-rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+      `;
+      projectSection.innerHTML += menutoindex;
+    });
+  } else {
+    console.error('Element with id "product" not found');
+  }
+});
+
+// ฟังก์ชั่นสำหรับบันทึกข้อมูลสินค้าที่เลือก
+function saveProductDetails(productId) {
+  const selectedProduct = products.find((product) => product.id === productId);
+  localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+}
