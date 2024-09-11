@@ -12,8 +12,7 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="./img/logo.png" class="h-20" alt="Smalldog Milk Tea" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Smalldog Milk
-                    Tea</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Smalldog Milk Tea</span>
             </a>
             <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                 <ul
@@ -84,7 +83,7 @@
             let totalPrice = 0;
 
             function renderCart() {
-                cartItemsDiv.innerHTML = ""; // ล้างสินค้าในหน้าจอ
+                cartItemsDiv.innerHTML = ""; 
                 cart.forEach((item, index) => {
                     const cartItemHTML = `
                         <div class="flex gap-4 bg-white px-4 py-6 rounded-md shadow-md">
@@ -113,16 +112,14 @@
                 finalPriceSpan.textContent = `${totalPrice + 999 - 1} บาท`;
             }
 
-            // Render initial cart
             renderCart();
 
-            // ฟังก์ชันลบสินค้าออกจากตะกร้า
             cartItemsDiv.addEventListener("click", function (e) {
                 if (e.target.classList.contains("remove-item-btn")) {
                     const index = e.target.getAttribute("data-index");
-                    cart.splice(index, 1); // ลบสินค้าจาก cart
-                    localStorage.setItem("cart", JSON.stringify(cart)); // อัปเดต localStorage
-                    renderCart(); // อัปเดตหน้าจอ
+                    cart.splice(index, 1); 
+                    localStorage.setItem("cart", JSON.stringify(cart)); 
+                    renderCart(); 
                 }
             });
 
