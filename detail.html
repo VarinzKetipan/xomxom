@@ -11,7 +11,7 @@
             margin-top: 15px;
         }
     </style>
-    <title>Document</title>
+    <title>Product Detail</title>
 </head>
 
 <body>
@@ -22,41 +22,27 @@
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Smalldog Milk
                     Tea</span>
             </a>
-            <button data-collapse-toggle="navbar-dropdown" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-dropdown" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                        <a href="index copy.html"
-                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                            aria-current="page">หน้าแรก</a>
+                        <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded">หน้าแรก</a>
                     </li>
                     <li>
-                        <a href="menu copy.html"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">เมนู</a>
+                        <a href="menu.html"
+                            class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-white">เมนู</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ติดต่อ</a>
+                        <a href="#" class="block py-2 px-3 text-gray-900 hover:bg-gray-100 dark:text-white">ติดต่อ</a>
                     </li>
-                    <li class="font-sans block mt-4 lg:inline-block lg:mt-0 lg:ml-6 align-middle text-black hover:text-gray-700">
-                        <a href="order.html" role="button" class="relative flex">
+                    <li>
+                        <a href="order.html" class="relative flex">
                             <svg class="flex-1 w-8 h-8 fill-current" viewbox="0 0 24 24">
                                 <path
                                     d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
                             </svg>
-                            <span
-                                class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">5
-                            </span>
+                            <span id="cartItemCount"
+                                class="absolute right-0 top-0 bg-red-600 w-4 h-4 text-white text-sm text-center">0</span>
                         </a>
                     </li>
                 </ul>
@@ -64,36 +50,36 @@
         </div>
     </nav>
 
-<section class="text-gray-600 body-font overflow-hidden">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="lg:w-4/5 mx-auto flex flex-wrap">
-            <img id="productImage" alt="ecommerce"
-                class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="">
-            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                <h2 id="productCategory" class="text-sm title-font text-gray-500 tracking-widest"></h2>
-                <h1 id="productName" class="text-gray-900 text-3xl title-font font-medium mb-1"></h1>
-                <p id="productDescription" class="leading-relaxed"></p>
-                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5"></div>
-                <div class="flex">
-                    <span id="productPrice" class="title-font font-medium text-2xl text-gray-900"></span>
-                    <button id="orderButton"
-                        class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">เพิ่มลงตะกร้า</button>
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                <img id="productImage" alt="ecommerce"
+                    class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="">
+                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 id="productCategory" class="text-sm title-font text-gray-500 tracking-widest"></h2>
+                    <h1 id="productName" class="text-gray-900 text-3xl title-font font-medium mb-1"></h1>
+                    <p id="productDescription" class="leading-relaxed"></p>
+                    <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5"></div>
+                    <div class="flex">
+                        <span id="productPrice" class="title-font font-medium text-2xl text-gray-900"></span>
+                        <button id="orderButton"
+                            class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">เพิ่มลงตะกร้า</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800"></footer>
-<div class="mx-auto max-w-screen-xl text-center">
-    <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
-        <img src="./img/logo.png" class="h-20" alt="Smalldog Milk Tea" />
-        Smalldog Milk Tea
-    </a>
-</div>
+    <footer class="p-4 bg-white dark:bg-gray-800"></footer>
 
-<script>
-     document.addEventListener("DOMContentLoaded", function () {
+    <script>
+        function updateCartItemCount() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let cartItemCount = cart.length;  // นับจำนวนสินค้าในตะกร้า
+            document.getElementById("cartItemCount").textContent = cartItemCount;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
             const productDetails = JSON.parse(localStorage.getItem("selectedProduct"));
 
             if (productDetails) {
@@ -103,10 +89,20 @@
                 document.getElementById("productDescription").textContent = productDetails.description;
                 document.getElementById("productPrice").textContent = productDetails.price;
             }
-        });
-</script>
 
-<script src="https://cdn.tailwindcss.com"></script>
+            updateCartItemCount(); 
+
+            document.getElementById("orderButton").addEventListener("click", function () {
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                cart.push(productDetails);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("เพิ่มสินค้าในตะกร้าแล้ว!");
+                updateCartItemCount(); 
+            });
+        });
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
