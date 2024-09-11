@@ -53,8 +53,8 @@
         <div class="bg-white rounded-md px-4 py-6 shadow-md">
             <ul class="text-gray-800 space-y-4">
                 <li class="flex justify-between text-sm">ราคารวม <span id="totalPrice">0 บาท</span></li>
-                <li class="flex justify-between text-sm">ค่าส่ง <span>999 บาท</span></li>
-                <li class="flex justify-between text-sm">ส่วนลด <span>1 บาท</span></li>
+                <li class="flex justify-between text-sm">ค่าส่ง <span>0 บาท</span></li>
+                <li class="flex justify-between text-sm">ส่วนลด <span>5 บาท</span></li>
                 <hr class="border-gray-300" />
                 <li class="flex justify-between text-sm font-bold">รวมทั้งสิ้น <span id="finalPrice">0 บาท</span></li>
             </ul>
@@ -109,7 +109,7 @@
 
                 totalPrice = cart.reduce((acc, item) => acc + parseFloat(item.price.replace(" บาท", "")), 0);
                 totalPriceSpan.textContent = `${totalPrice} บาท`;
-                finalPriceSpan.textContent = `${totalPrice + 999 - 1} บาท`;
+                finalPriceSpan.textContent = `${totalPrice + 0 - 5} บาท`;
             }
 
             renderCart();
