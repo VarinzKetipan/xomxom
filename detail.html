@@ -4,13 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        #qrcode {
-            width: 128px;
-            height: 128px;
-            margin-top: 15px;
-        }
-    </style>
     <title>Product Detail</title>
 </head>
 
@@ -75,7 +68,7 @@
     <script>
         function updateCartItemCount() {
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
-            let cartItemCount = cart.length;  // นับจำนวนสินค้าในตะกร้า
+            let cartItemCount = cart.length;  
             document.getElementById("cartItemCount").textContent = cartItemCount;
         }
 
@@ -103,6 +96,8 @@
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="cart.js"></script>
+
 </body>
 
 </html>
