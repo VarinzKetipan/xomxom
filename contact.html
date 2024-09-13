@@ -11,7 +11,7 @@
     <title>Contact</title>
 </head>
 
-<body>
+<body class="bg-gradient-to-r from-violet-50 to-orange-50">
 <header
     class='flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50 font-sans'>
     <div class='flex flex-wrap items-center lg:gap-y-2 gap-4 w-full'>
@@ -80,21 +80,21 @@
 
     <div
         class="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-8 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white mt-4 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-[#AF8260] before:h-full max-md:before:hidden">
-        <div>
+        <div class="font-sans">
             <h2 class="text-gray-800 text-3xl font-extrabold">Contact</h2>
             <p class="text-sm text-gray-500 mt-4 leading-relaxed">ติดต่อ</p>
 
             <form>
                 <div class="space-y-4 mt-8">
-                    <input type="text" placeholder="Full Name"
+                    <input type="text" placeholder="ชื่อ-นามสกุล"
                         class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
-                    <input type="number" placeholder="Phone No."
-                        class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
-
-                    <input type="email" placeholder="Email"
+                    <input type="number" placeholder="เบอร์โทร"
                         class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
 
-                    <textarea placeholder="Write Message"
+                    <input type="email" placeholder="อีเมล"
+                        class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+
+                    <textarea placeholder="ข้อความ"
                         class="px-2 pt-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none"></textarea>
                 </div>
 
@@ -106,7 +106,7 @@
                             d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
                             clip-rule="evenodd" data-original="#000000" />
                     </svg>
-                    Send Message
+                    ส่ง
                 </button>
             </form>
 
@@ -142,7 +142,8 @@
                 allowfullscreen></iframe>
         </div>
     </div><br><br>
-    <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+    
+    <footer class="p-4 md:p-8 lg:p-10 font-sans">
         <div class="mx-auto max-w-screen-xl text-center">
             <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
                 <img src="./img/logo.png" class="h-20" alt="Smalldog Milk Tea" />
@@ -165,6 +166,7 @@
     </footer>
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="cart.js"></script>
     <script src="tail.js"></script>
 </body>
 
