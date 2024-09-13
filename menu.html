@@ -9,17 +9,9 @@
 
 	<title>Smalldog Milk Tea</title>
 	<!-- Slick -->
-	<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
-
-
-	<!-- nouislider -->
-	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
-
-	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 	<script src="https://cdn.tailwindcss.com"></script>
 
 
@@ -32,8 +24,9 @@
 
 </head>
 
-<body>
-<header class='flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50'>
+<body class="bg-gradient-to-r from-violet-50 to-orange-50">
+
+<header class='flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50 font-sans'>
 	<div class='flex flex-wrap items-center lg:gap-y-2 gap-4 w-full'>
 		<a href="index.html"><img src="img/logo.png" alt="Smalldog Milk Tea" class='w-20 h-20' /></a>
 
@@ -57,34 +50,35 @@
 				</li>
 				<li class='max-lg:border-b max-lg:py-3 px-3'>
 					<a href='index.html'
-						class='nav-link text-[#333] hover:text-[#007bff] text-[15px] block font-semibold {{ request()->is("/") ? "text-[#007bff] font-bold" : "" }}'>หน้าแรก</a>
+						class='nav-link text-[#333] hover:text-[#007bff] text-[17px] block font-semibold {{ request()->is("/") ? "text-[#007bff] font-bold" : "" }}'>หน้าแรก</a>
 				</li>
 				<li class='max-lg:border-b max-lg:py-3 px-3'>
 					<a href='menu.html'
-						class='nav-link text-[#333] hover:text-[#007bff] text-[15px] block font-semibold {{ request()->is("menu") ? "text-[#007bff] font-bold" : "" }}'>เมนู</a>
+						class='nav-link text-[#333] hover:text-[#007bff] text-[17px] block font-semibold {{ request()->is("menu") ? "text-[#007bff] font-bold" : "" }}'>เมนู</a>
 				</li>
 				<li class='max-lg:border-b max-lg:py-3 px-3'>
 					<a href='contact.html'
-						class='nav-link text-[#333] hover:text-[#007bff] text-[15px] block font-semibold {{ request()->is("contact") ? "text-[#007bff] font-bold" : "" }}'>ติดต่อ</a>
+						class='nav-link text-[#333] hover:text-[#007bff] text-[17px] block font-semibold {{ request()->is("contact") ? "text-[#007bff] font-bold" : "" }}'>ติดต่อ</a>
 				</li>
 			</ul>
 		</div>
 
 		<div class="flex gap-x-6 gap-y-4 ml-auto">
 			<div class='flex items-center space-x-8'>
-				
+
 				<span class="relative">
 					<a href="order.html">
-					<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-						class="cursor-pointer fill-[#333] inline" viewBox="0 0 512 512">
-						<path
-							d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
-							data-original="#000000"></path>
-					</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+							class="cursor-pointer fill-[#333] inline" viewBox="0 0 512 512">
+							<path
+								d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+								data-original="#000000"></path>
+						</svg>
 					</a>
-					<span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white" id="cartItemCount">0</span>
+					<span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white"
+						id="cartItemCount">0</span>
 				</span>
-				
+
 				<button id="toggleOpen" class='lg:hidden'>
 					<svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd"
@@ -147,18 +141,17 @@
 	</nav> -->
 
 	<div class="text-center p-10">
-		<h1 class="font-bold text-4xl mb-4">Menu</h1>
+		<h1 class="font-bold text-4xl mb-4 ">Menu</h1>
 		<h1 class="text-3xl">เมนู</h1>
 	</div>
 
 	<section id="Projects"
 		class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
 	</section>
-	<script>
-		
-	</script>
 	<script src="js/products copy.js"></script>
 	<script src="cart.js"></script>
+	<script src="tail.js"></script>
+
 </body>
 
 </html>
