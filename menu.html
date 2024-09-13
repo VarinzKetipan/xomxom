@@ -1,430 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Smalldog Milk Tea</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<!-- Google font -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<title>Smalldog Milk Tea</title>
+	<!-- Slick -->
+	<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
 
-		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
 
-		<!-- Slick -->
-		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
-		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
 
-		<!-- nouislider -->
-		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 
-		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<script src="https://cdn.tailwindcss.com"></script>
 
-		<!-- Custom stlylesheet -->
-		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-    </head>
-	<body>
-		<!-- HEADER -->
-		<header>
-			<!-- TOP HEADER -->
-			<div id="top-header">
-				<div class="container">
-					
-				</div>
-			</div>
-			<!-- /TOP HEADER -->
+</head>
 
-			<!-- MAIN HEADER -->
-			<div id="header">
-				<!-- container -->
-				<div class="container">
-					<!-- row -->
-					<div class="row">
-						<!-- LOGO -->
-						<div class="col-md-6">
-							<div class="header-logo">
-								<a href="index.html" class="logo">
-									<img src="./img/logo.png" alt="">
-								</a>
-							</div>
-						</div>
-						<!-- /LOGO -->
-					</div>
-					<!-- row -->
-				</div>
-				<!-- container -->
-			</div>
-			<!-- /MAIN HEADER -->
-		</header>
-		<!-- /HEADER -->
+<body>
+<header class='flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50'>
+	<div class='flex flex-wrap items-center lg:gap-y-2 gap-4 w-full'>
+		<a href="index.html"><img src="img/logo.png" alt="Smalldog Milk Tea" class='w-20 h-20' /></a>
 
-		<!-- NAVIGATION -->
-		<nav id="navigation">
-			<!-- container -->
-			<div class="container">
-				<!-- responsive-nav -->
-				<div style="padding-left: 450px;" id="responsive-nav">
-					<!-- NAV -->
-					<ul class="main-nav nav navbar-nav">
-                        <li></li>
-						<li><a href="index.html">หน้าหลัก</a></li>
-						<li class="active"><a href="menu.html">เมนู</a></li>
-						<li><a href="contact.html">ติดต่อ</a></li>
-					</ul>
-					<!-- /NAV -->
-				</div>
-				<!-- /responsive-nav -->
-			</div>
-			<!-- /container -->
-		</nav>
-		<!-- /NAVIGATION -->
+		<div id="collapseMenu"
+			class='lg:ml-10 max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+			<button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+					<path
+						d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+						data-original="#000000"></path>
+					<path
+						d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+						data-original="#000000"></path>
+				</svg>
+			</button>
 
-		<br>
-
-
-		<!-- SECTION -->
-		<!-- /SECTION -->
-
-		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-
-					<!-- section title -->
-					<div class="col-md-12">
-						<div class="section-title">
-							<h3 class="title">เมนู</h3>
-							
-						</div>
-					</div>
-					<!-- /section title -->
-
-					<!-- Products tab & slick -->
-					<div class="col-md-12">
-						<div class="row">
-							<div class="products-tabs">
-								<!-- tab -->
-								<div id="tab1" class="tab-pane active">
-									<div class="products-slick" data-nav="#slick-nav-1">
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/กุหลาบลาเต้.jpg" alt="">
-												<div class="product-label">
-													
-												</div>
-											</div>
-											<div class="product-body">
-												<p class="product-category">ลาเต้</p>
-												<h3 class="product-name"><a href="product.html">กุหลาบลาเต้</a></h3>
-												<h4 class="product-price">60 บาท<del class="product-old-price">75 บาท</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-												
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/โกโก้ลาเต้.jpg" alt="">
-												<div class="product-label">
-													
-												</div>
-											</div>
-											<div class="product-body">
-												<p class="product-category">ลาเต้</p>
-												<h3 class="product-name"><a href="product.html">โกโก้ลาเต้</a></h3>
-												<h4 class="product-price">60 บาท<del class="product-old-price">75 บาท</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-												</div>
-												
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/ชาเขียวมัทฉะชิอาวาเสะ.jpg" alt="">
-												<div class="product-label">
-													
-												</div>
-											</div>
-											<div class="product-body">
-												<p class="product-category">ชา</p>
-												<h3 class="product-name"><a href="product.html">ชาเขียวมัทฉะชิอาวาเสะ</a></h3>
-												<h4 class="product-price">60 บาท<del class="product-old-price">75 บาท</del></h4>
-												<div class="product-rating">
-												</div>
-												
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/ชาไทย.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">ชา</p>
-												<h3 class="product-name"><a href="product.html">ชาไทย</a></h3>
-												<h4 class="product-price">$60 บาท<del class="product-old-price">75 บาท</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-												
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/ชานมมีความสุข.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">มีความสุข</p>
-												<h3 class="product-name"><a href="product.html">ชานมมีความสุข</a></h3>
-												<h4 class="product-price">60 บาท<del class="product-old-price">75 บาท</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/ชาผลไม้รวม.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">ผลไม้</p>
-												<h3 class="product-name"><a href="product.html">ชาผลไม้รวม</a></h3>
-												<h4 class="product-price">60 บาท<del class="product-old-price">75 บาท</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/ชาลูกพีช.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">ผลไม้</p>
-												<h3 class="product-name"><a href="product.html">ชาลูกพีช</a></h3>
-												<h4 class="product-price">60 บาท<del class="product-old-price">75 บาท</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/ชาสตรอเบอร์รี่.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">ผลไม้</p>
-												<h3 class="product-name"><a href="product.html">ชาสตรอเบอร์รี่</a></h3>
-												<h4 class="product-price">60 บาท<del class="product-old-price">75 บาท/del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/นมสดโคฟูกุ.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">มีความสุข</p>
-												<h3 class="product-name"><a href="product.html">นมสดโคฟูกุ</a></h3>
-												<h4 class="product-price">60 บาท<del class="product-old-price">75 บาท</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/อัญชันลาเต้.jpg" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">ลาเต้</p>
-												<h3 class="product-name"><a href="product.html">อัญชันลาเต้</a></h3>
-												<h4 class="product-price">60 บาท <del class="product-old-price">75 บาท</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-
-											</div>
-											
-										</div>
-										<!-- /product -->
-
-									</div>
-									<div id="slick-nav-1" class="products-slick-nav"></div>
-								</div>
-								<!-- /tab -->
-							</div>
-						</div>
-					</div>
-					<!-- Products tab & slick -->
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
+			<ul
+				class='lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+				<li class='mb-6 hidden max-lg:block'>
+					<a href="index.html"><img src="img/logo.png" alt="Smalldog Milk Tea" class='w-36' /></a>
+				</li>
+				<li class='max-lg:border-b max-lg:py-3 px-3'>
+					<a href='index.html'
+						class='nav-link text-[#333] hover:text-[#007bff] text-[15px] block font-semibold {{ request()->is("/") ? "text-[#007bff] font-bold" : "" }}'>หน้าแรก</a>
+				</li>
+				<li class='max-lg:border-b max-lg:py-3 px-3'>
+					<a href='menu.html'
+						class='nav-link text-[#333] hover:text-[#007bff] text-[15px] block font-semibold {{ request()->is("menu") ? "text-[#007bff] font-bold" : "" }}'>เมนู</a>
+				</li>
+				<li class='max-lg:border-b max-lg:py-3 px-3'>
+					<a href='contact.html'
+						class='nav-link text-[#333] hover:text-[#007bff] text-[15px] block font-semibold {{ request()->is("contact") ? "text-[#007bff] font-bold" : "" }}'>ติดต่อ</a>
+				</li>
+			</ul>
 		</div>
-		<!-- /SECTION -->
 
-
-		<!-- NEWSLETTER -->
-		<div id="newsletter" class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<div class="col-md-12">
-						
-				</div>
-				<!-- /row -->
+		<div class="flex gap-x-6 gap-y-4 ml-auto">
+			<div class='flex items-center space-x-8'>
+				
+				<span class="relative">
+					<a href="order.html">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
+						class="cursor-pointer fill-[#333] inline" viewBox="0 0 512 512">
+						<path
+							d="M164.96 300.004h.024c.02 0 .04-.004.059-.004H437a15.003 15.003 0 0 0 14.422-10.879l60-210a15.003 15.003 0 0 0-2.445-13.152A15.006 15.006 0 0 0 497 60H130.367l-10.722-48.254A15.003 15.003 0 0 0 105 0H15C6.715 0 0 6.715 0 15s6.715 15 15 15h77.969c1.898 8.55 51.312 230.918 54.156 243.71C131.184 280.64 120 296.536 120 315c0 24.812 20.188 45 45 45h272c8.285 0 15-6.715 15-15s-6.715-15-15-15H165c-8.27 0-15-6.73-15-15 0-8.258 6.707-14.977 14.96-14.996zM477.114 90l-51.43 180H177.032l-40-180zM150 405c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm167 15c0 24.813 20.188 45 45 45s45-20.188 45-45-20.188-45-45-45-45 20.188-45 45zm45-15c8.27 0 15 6.73 15 15s-6.73 15-15 15-15-6.73-15-15 6.73-15 15-15zm0 0"
+							data-original="#000000"></path>
+					</svg>
+					</a>
+					<span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white" id="cartItemCount">0</span>
+				</span>
+				
+				<button id="toggleOpen" class='lg:hidden'>
+					<svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd"
+							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+							clip-rule="evenodd"></path>
+					</svg>
+				</button>
 			</div>
-			<!-- /container -->
 		</div>
-		<!-- /NEWSLETTER -->
+	</div>
+</header>
 
-		<!-- FOOTER -->
-		<footer id="footer">
-			<!-- top footer -->
-			<div class="section">
-				<!-- container -->
-				<div class="container">
-					<!-- row -->
+	<!-- <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+			<a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+				<img src="./img/logo.png" class="h-20" alt="Smalldog Milk Tea" />
+				<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Smalldog Milk
+					Tea</span>
+			</a>
+			<button id="navbar-toggle" data-collapse-toggle="navbar-dropdown" type="button"
+				class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+				aria-controls="navbar-dropdown" aria-expanded="false">
+				<span class="sr-only">Open main menu</span>
+				<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						d="M1 1h15M1 7h15M1 13h15" />
+				</svg>
+			</button>
 
-					<!-- /row -->
-				</div>
-				<!-- /container -->
+			<div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+				<ul
+					class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+					<li>
+						<a href="index.html"
+							class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+							aria-current="page">หน้าแรก</a>
+					</li>
+					<li>
+						<a href="menu copy.html"
+							class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">เมนู</a>
+					</li>
+					<li>
+						<a href="contact.html"
+							class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ติดต่อ</a>
+					</li>
+					<li
+						class="font-sans block mt-4 lg:inline-block lg:mt-0 lg:ml-6 align-middle text-black hover:text-gray-700">
+						<a href="order.html" class="relative flex">
+							<svg class="flex-1 w-7 h-7 fill-current" viewbox="0 0 24 24">
+								<path
+									d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
+							</svg>
+							<span id="cartItemCount"
+								class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">0</span>
+						</a>
+					</li>
+				</ul>
 			</div>
-			<!-- /top footer -->
+		</div>
+	</nav> -->
 
-			<!-- bottom footer -->
-			<div id="bottom-footer" class="section">
-				<div class="container">
-					<!-- row -->
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<ul class="footer-payments">
-								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
-								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
-								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
-								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
-							</ul>
-							<span class="copyright">
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</span>
-						</div>
-					</div>
-						<!-- /row -->
-				</div>
-				<!-- /container -->
-			</div>
-			<!-- /bottom footer -->
-		</footer>
-		<!-- /FOOTER -->
+	<div class="text-center p-10">
+		<h1 class="font-bold text-4xl mb-4">Menu</h1>
+		<h1 class="text-3xl">เมนู</h1>
+	</div>
 
-		<!-- jQuery Plugins -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/nouislider.min.js"></script>
-		<script src="js/jquery.zoom.min.js"></script>
-		<script src="js/main.js"></script>
+	<section id="Projects"
+		class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+	</section>
+	<script>
+		
+	</script>
+	<script src="js/products copy.js"></script>
+	<script src="cart.js"></script>
+</body>
 
-	</body>
 </html>
