@@ -15,7 +15,7 @@
         class='flex bg-white border-b py-4 sm:px-8 px-6 font-[sans-serif] min-h-[80px] tracking-wide relative z-50 font-sans'>
         <div class='flex flex-wrap items-center lg:gap-y-2 gap-4 w-full'>
             <a href="index.html"><img src="img/logo.png" alt="Smalldog Milk Tea" class='w-20 h-20' /></a>
-    
+
             <div id="collapseMenu"
                 class='lg:ml-10 max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
                 <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
@@ -28,7 +28,7 @@
                             data-original="#000000"></path>
                     </svg>
                 </button>
-    
+
                 <ul
                     class='lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
                     <li class='mb-6 hidden max-lg:block'>
@@ -44,14 +44,20 @@
                     </li>
                     <li class='max-lg:border-b max-lg:py-3 px-3'>
                         <a href='contact.html'
-                            class='nav-link text-[#333] hover:text-[#007bff] text-[17px] block font-semibold {{ request()->is("contact") ? "text-[#007bff] font-bold" : "" }}'>ติดต่อ</a>
+                            class='nav-link text-[#333] hover:text-[#007bff] text-[17px] block font-semibold {{ request()->is("contact") ? "text-[#007bff] font-bold" : "" }}'>ติดต่อ
+                        </a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <a href='login.html'
+                            class='nav-link text-[#333] hover:text-[#007bff] text-[17px] block font-semibold {{ request()->is("contact") ? "text-[#007bff] font-bold" : "" }}'>เข้าสู่ระบบ
+                        </a>
                     </li>
                 </ul>
             </div>
-    
+
             <div class="flex gap-x-6 gap-y-4 ml-auto">
                 <div class='flex items-center space-x-8'>
-    
+
                     <span class="relative">
                         <a href="order.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
@@ -61,10 +67,11 @@
                                     data-original="#000000"></path>
                             </svg>
                         </a>
-                        <span class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white"
+                        <span
+                            class="absolute left-auto -ml-1 top-0 rounded-full bg-red-500 px-1 py-0 text-xs text-white"
                             id="cartItemCount">0</span>
                     </span>
-    
+
                     <button id="toggleOpen" class='lg:hidden'>
                         <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -96,7 +103,7 @@
             </div>
         </div>
     </section>
-    
+
     <footer class="p-4 md:p-8 lg:p-10 font-sans">
         <div class="mx-auto max-w-screen-xl text-center">
             <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
